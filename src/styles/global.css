@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+ 
+@theme {
+  /* ---------- Colors ---------- */
+  --color-paper: #F6F7F9;
+  --color-ink: #15171C;
+  --color-dark: #0F1116;
+  --color-paper-dim: #E9EBF0;
+  --color-accent: #2B54E8;          /* alias of blue-500 */
+ 
+  --color-blue-50: #ECF1FE;
+  --color-blue-100: #CFDCFC;
+  --color-blue-300: #6E93F5;
+  --color-blue-500: #2B54E8;
+  --color-blue-700: #1A37A8;
+  --color-blue-900: #101E52;
+ 
+  --color-steel: #565A63;
+  --color-steel-dim: #8A8F99;
+  --color-hairline: #DCDFE6;
+  --color-hairline-dark: #24272F;
+  --color-signal: #D8382B;
+ 
+  /* ---------- Font families ---------- */
+  --font-sans: Archivo, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+ 
+  /* ---------- Font sizes ----------
+     Size goes in --text-*, with line-height / weight / tracking
+     attached as companion variables. */
+  --text-hero: 4.5rem;
+  --text-hero--line-height: 0.95;
+  --text-hero--font-weight: 800;
+ 
+  --text-section: 2.25rem;
+  --text-section--line-height: 1.1;
+  --text-section--font-weight: 700;
+ 
+  --text-card: 1.375rem;
+  --text-card--line-height: 1.2;
+  --text-card--font-weight: 600;
+ 
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 400;
+ 
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.08em;
+  --text-label--font-weight: 500;
+ 
+  --text-btn: 0.875rem;
+  --text-btn--line-height: 1;
+  --text-btn--letter-spacing: 0.04em;
+  --text-btn--font-weight: 600;
+ 
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.5;
+  --text-caption--font-weight: 400;
+ 
+  /* ---------- Max width  →  max-w-content, max-w-prose ----------
+     v4 feeds max-w-* from the container namespace. */
+  --container-content: 1200px;
+  --container-prose: 68ch;
+ 
+  /* ---------- Spacing  →  p-section, m-section, gap-section-sm, … ---------- */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 3.5rem;
+ 
+  /* ---------- Letter spacing  →  tracking-label, tracking-tightish ---------- */
+  --tracking-label: 0.08em;
+  --tracking-tightish: -0.01em;
+}
