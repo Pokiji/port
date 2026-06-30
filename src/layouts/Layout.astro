@@ -32,22 +32,28 @@ import '../styles/global.css';
 		<title>Portfolio</title>
 	</head>
 	<body class="min-h-screen antialiased bg-paper font-sans",> 
-		<div class="site-shell">
-			<!-- nav -->
-			<div class="sticky top-0 z-20 w-full mx-auto self-center items-center place-self-center">
-				<div class="grid grid-cols-6 items-center justify-items-center gap-x-6">
-					<a href="#" class="col-span-1">
-						<img src="mstile-70x70.png" alt="Description of the image">
-					</a>
-					
-					<a href="#" class="font-mono before text-2xl col-start-5">Projects</a>
-					<a href="#" class="font-mono text-2xl">Contact</a>
+		<div class="page-frame">
+    		<aside class="side-rail left-rail" aria-hidden="true"></aside>
+
+			<div class="site-shell">
+				<!-- nav -->
+				<div class="sticky top-0 z-20 w-full mx-auto self-center items-center place-self-center border-b">
+					<div class="grid grid-cols-6 items-center justify-items-center gap-x-6 ">
+						<a href="#" class="col-span-1">
+							<img src="mstile-70x70.png" alt="Description of the image">
+						</a>
+						
+						<a href="#" class="font-mono before text-2xl col-start-5">Projects</a>
+						<a href="#" class="font-mono text-2xl">Contact</a>
+					</div>
+				</div>
+			<!-- main -->
+				<div>
+					<slot />
 				</div>
 			</div>
-		<!-- main -->
-			<div>
-				<slot />
-			</div>
+			<aside class="side-rail right-rail" aria-hidden="true"></aside>
+
 		</div>
 	</body>
 </html>
