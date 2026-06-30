@@ -10,45 +10,11 @@ export default function Hero({
   subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 }: HeroProps) {
   return (
-    <section className="min-h-screen flex items-center px-6">
-      <div className="max-w-4xl ">
-        <p className="font-mono text-sm uppercase tracking-label text-accent">
-          {eyebrow}
-        </p>
-
-        <h1 className="text-hero leading-none tracking-tight text-ink">
-          {title}
-        </h1>
-
-        <p className="max-w-2xl text-body text-steel">
-          {subtitle}
-        </p>
-
-        <div className="grid gap-4 pt-8 md:grid-cols-3">
-          <div className="border border-hairline p-6">
-            <p className="font-mono text-label text-accent">CTRL_001</p>
-            <h2 className="mt-4 text-card">Control Systems</h2>
-            <p className="mt-3 text-caption text-steel">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-
-          <div className="border border-hairline p-6">
-            <p className="font-mono text-label text-accent">WEB_002</p>
-            <h2 className="mt-4 text-card">Web Interfaces</h2>
-            <p className="mt-3 text-caption text-steel">
-              Integer nec odio. Praesent libero. Sed cursus ante dapibus.
-            </p>
-          </div>
-
-          <div className="border border-hairline p-6">
-            <p className="font-mono text-label text-accent">AUTO_003</p>
-            <h2 className="mt-4 text-card">Autonomy</h2>
-            <p className="mt-3 text-caption text-steel">
-              Duis sagittis ipsum. Praesent mauris fusce nec tellus.
-            </p>
-          </div>
-        </div>
+    <section className="px-6 pt-3">
+      <div className="CTA flex flex-col">
+        <div className=" text-caption text-blue-400 font-mono text-label pl-1">C:\Users\Alex</div>
+        <div className="text-hero font-weight ">Rebuild,<br />  Redesign, Focus </div>
+        <div className="text-caption text-steel-dim">Doing things I couldn't before</div>
       </div>
     </section>
   );

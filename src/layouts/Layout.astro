@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -36,29 +38,11 @@ import '../styles/global.css';
     		<aside class="side-rail left-rail" aria-hidden="true"></aside>
 
 			<div class="site-shell">
-				<!-- nav -->
-				<header class="sticky top-0 z-20 w-full border-b border-hairline bg-paper/80 backdrop-blur-md">
-					<div class="grid grid-cols-4 min-h-16 items-center justify-items-center justify-center px-4  md:grid-cols-6 md:px-6">
-						<a href="#" class="col-start-1 justify-self-start">
-							<img
-							src="mstile-70x70.png"
-							alt="Home"
-							/>
-						</a>
-						<a href="#projects" class=" col-start-3 font-mono text-lg md:col-start-5">
-						Projects
-						</a>
-
-						<a href="#contact" class=" font-mono text-lg">
-						Contact
-						</a>
-					</div>
-				</header>
+				<Navbar/>
 				<div class="sep-grad"></div>
 				<!-- injection >_< -->
-				<div>
-					<slot/>
-				</div>
+				<slot/>
+				<Footer/>
 			</div>
 			<aside class="side-rail right-rail" aria-hidden="true"></aside>
 
