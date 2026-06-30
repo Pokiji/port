@@ -27,22 +27,26 @@ import '../styles/global.css';
 		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
 		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Portfolio</title>
 	</head>
 	<body class="min-h-screen antialiased bg-paper font-sans",> 
-		<div class="sticky z-20 m-0 p-0">
-			<div class="inline">
-				<a href="#">
-					<img src="mstile-70x70.png" alt="Description of the image">
-				</a>
-				<a href="#">1.Projects</a>
-				<a href="#">2.Contact</a>
-			</div>
-		</div>
 		<div class="site-shell">
-			<slot />
+			<!-- nav -->
+			<div class="sticky top-0 z-20 w-full mx-auto self-center items-center place-self-center">
+				<div class="grid grid-cols-4 items-center justify-items-center gap-x-5">
+					<a href="#" class="col-span-2">
+						<img src="mstile-70x70.png" alt="Description of the image">
+					</a>
+					<a href="#" class="font-mono before text-2xl">Projects</a>
+					<a href="#" class="font-mono text-2xl">Contact</a>
+				</div>
+			</div>
+		<!-- main -->
+			<div>
+				<slot />
+			</div>
 		</div>
 	</body>
 </html>
