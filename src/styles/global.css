@@ -72,3 +72,53 @@
   --tracking-label: 0.08em;
   --tracking-tightish: -0.01em;
 }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.site-shell {
+  position: relative;
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+  min-height: 100vh;
+  border-left: 1px solid rgba(148, 163, 184, 0.22);
+  border-right: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.site-shell::before,
+.site-shell::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 40px;
+
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(148, 163, 184, 0.22) 0px,
+    rgba(148, 163, 184, 0.22) 1px,
+    transparent 2px,
+    transparent 7px
+  );
+
+  opacity: 0.7;
+}
+
+.site-shell::before {
+  left: -41px;
+   border-left: 1px solid var(--color-ink);
+   border-right: 1px solid var(--color-ink);
+}
+
+.site-shell::after {
+  right: -41px;
+  border-left: 1px solid var(--color-ink);
+  border-right: 1px solid var(--color-ink);
+}
