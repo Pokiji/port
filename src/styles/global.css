@@ -25,7 +25,7 @@
 
   /* ---------- Font families ---------- */
   --font-sans: Archivo, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 
   /* ---------- Font sizes ---------- */
   --text-hero: 4.5rem;

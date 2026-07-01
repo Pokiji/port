@@ -13,8 +13,9 @@ export default function Hero({
     <section className="px-6 pt-3">
       <div className="CTA flex flex-col">
         <div className=" text-caption text-blue-400 font-mono text-label pl-1">C:\Users\Alex</div>
-        <div className="text-hero font-weight ">Rebuild,<br />  Redesign, Focus </div>
+        <div className="text-hero font-mono font-semibold">Rebuild,<br />  Redesign, Focus </div>
         <div className="text-caption text-steel-dim">Doing things I couldn't before</div>
+      
       </div>
     </section>
   );

@@ -2,11 +2,15 @@
 import '../styles/global.css';
 import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
+import { Font } from "astro:assets";
+
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
+		<Font cssVariable="--font-jetbrains-mono" preload />
+		<Font cssVariable="--font-archivo" preload />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
